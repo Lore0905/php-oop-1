@@ -31,10 +31,21 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
             $this->title = $_title;
             $this->year = $_year;
         }
+        public function valutations($valutazione){
+            if( $valutazione <= 4){
+                return $this->star = 'il film non è piaciuto alla maggior parte delle persone';
+            }
+            else if($valutazione === 5){
+                return $this->star = 'il film è piaciuto alla metà delle persone';
+            }
+            else {
+                return $this->star = 'il film è piaciuto alla maggior parte delle persone'
+            }
+        }
     }
     
     $Joker = new Movie('Joker', 2019);
     $Joker->protagonist = 'Joaquin Phoenix';
-    $Joker->star = '10';
+    $Joker->valutations(10);
     var_dump($Joker)
 ?>
