@@ -27,11 +27,13 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
         public $year;
         public $protagonist = "purtroppo, non è disponibile";
         public $star;
+        public function __construct($_title, $_year){
+            $this->title = $_title;
+            $this->year = $_year;
+        }
     }
     
-    $Joker = new Movie();
-    $Joker->title = 'Joker';
-    $Joker->year = 2019;
+    $Joker = new Movie('Joker', 2019);
     $Joker->protagonist = 'Joaquin Phoenix';
     $Joker->star = '10';
     var_dump($Joker)
