@@ -39,7 +39,7 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
                 return $this->star = 'il film è piaciuto alla metà delle persone';
             }
             else {
-                return $this->star = 'il film è piaciuto alla maggior parte delle persone'
+                return $this->star = 'il film è piaciuto alla maggior parte delle persone';
             }
         }
     }
