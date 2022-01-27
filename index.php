@@ -47,5 +47,15 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
     $Joker = new Movie('Joker', 2019);
     $Joker->protagonist = 'Joaquin Phoenix';
     $Joker->valutations(10);
-    var_dump($Joker)
+    var_dump($Joker);
+
+    $Psyco = new Movie('Psyco', 1960);
+    $Psyco->protagonist = 'Janet Leigh';
+    $Psyco->valutations(5);
+    var_dump($Psyco);
+
+    $Casablanca = new Movie('Casablanca', 1942);
+    $Casablanca->protagonist = 'Humphrey Bogart';
+    $Casablanca->valutations(2);
+    var_dump($Casablanca);
 ?>
